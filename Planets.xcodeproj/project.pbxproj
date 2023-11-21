@@ -8,21 +8,77 @@
 
 /* Begin PBXBuildFile section */
 		BB7DCDE92B0C536800D70D3E /* PlanetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCDE82B0C536800D70D3E /* PlanetsApp.swift */; };
-		BB7DCDEB2B0C536800D70D3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCDEA2B0C536800D70D3E /* ContentView.swift */; };
 		BB7DCDED2B0C536900D70D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7DCDEC2B0C536900D70D3E /* Assets.xcassets */; };
 		BB7DCDF02B0C536900D70D3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7DCDEF2B0C536900D70D3E /* Preview Assets.xcassets */; };
+		BB7DCDFE2B0C53DD00D70D3E /* PlanetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCDFD2B0C53DD00D70D3E /* PlanetViewModel.swift */; };
+		BB7DCE012B0C541400D70D3E /* PlanetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCDFF2B0C541400D70D3E /* PlanetResponse.swift */; };
+		BB7DCE022B0C541400D70D3E /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE002B0C541400D70D3E /* APIEndpoint.swift */; };
+		BB7DCE042B0C542600D70D3E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE032B0C542600D70D3E /* NetworkError.swift */; };
+		BB7DCE082B0C543000D70D3E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE052B0C543000D70D3E /* String.swift */; };
+		BB7DCE092B0C543000D70D3E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE062B0C543000D70D3E /* Color.swift */; };
+		BB7DCE0A2B0C543000D70D3E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE072B0C543000D70D3E /* Double.swift */; };
+		BB7DCE0C2B0C544F00D70D3E /* ClimateTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE0B2B0C544F00D70D3E /* ClimateTextModifier.swift */; };
+		BB7DCE0E2B0C546500D70D3E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE0D2B0C546500D70D3E /* NetworkManager.swift */; };
+		BB7DCE162B0C547200D70D3E /* PlanetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE0F2B0C547200D70D3E /* PlanetListView.swift */; };
+		BB7DCE172B0C547200D70D3E /* PopulationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE112B0C547200D70D3E /* PopulationLabel.swift */; };
+		BB7DCE182B0C547200D70D3E /* PlanetParameterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE122B0C547200D70D3E /* PlanetParameterListView.swift */; };
+		BB7DCE192B0C547200D70D3E /* IconTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE132B0C547200D70D3E /* IconTextView.swift */; };
+		BB7DCE1A2B0C547200D70D3E /* PlanetListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE142B0C547200D70D3E /* PlanetListCell.swift */; };
+		BB7DCE1B2B0C547200D70D3E /* PlanetClimatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE152B0C547200D70D3E /* PlanetClimatesView.swift */; };
+		BB7DCE1D2B0C567B00D70D3E /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE1C2B0C567B00D70D3E /* PreviewData.swift */; };
+		BB7DCE252B0C57F100D70D3E /* PlanetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE242B0C57F100D70D3E /* PlanetsTests.swift */; };
+		BB7DCE2E2B0C580200D70D3E /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE2B2B0C580200D70D3E /* FakeNetworkManager.swift */; };
+		BB7DCE2F2B0C580200D70D3E /* PlanetVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE2C2B0C580200D70D3E /* PlanetVMTest.swift */; };
+		BB7DCE302B0C580200D70D3E /* PlanetResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7DCE2D2B0C580200D70D3E /* PlanetResponse.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB7DCE262B0C57F100D70D3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7DCDDD2B0C536800D70D3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB7DCDE42B0C536800D70D3E;
+			remoteInfo = Planets;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BB7DCDE52B0C536800D70D3E /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7DCDE82B0C536800D70D3E /* PlanetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsApp.swift; sourceTree = "<group>"; };
-		BB7DCDEA2B0C536800D70D3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB7DCDEC2B0C536900D70D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB7DCDEF2B0C536900D70D3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB7DCDFD2B0C53DD00D70D3E /* PlanetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModel.swift; sourceTree = "<group>"; };
+		BB7DCDFF2B0C541400D70D3E /* PlanetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetResponse.swift; sourceTree = "<group>"; };
+		BB7DCE002B0C541400D70D3E /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		BB7DCE032B0C542600D70D3E /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BB7DCE052B0C543000D70D3E /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		BB7DCE062B0C543000D70D3E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		BB7DCE072B0C543000D70D3E /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		BB7DCE0B2B0C544F00D70D3E /* ClimateTextModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimateTextModifier.swift; sourceTree = "<group>"; };
+		BB7DCE0D2B0C546500D70D3E /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BB7DCE0F2B0C547200D70D3E /* PlanetListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetListView.swift; sourceTree = "<group>"; };
+		BB7DCE112B0C547200D70D3E /* PopulationLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopulationLabel.swift; sourceTree = "<group>"; };
+		BB7DCE122B0C547200D70D3E /* PlanetParameterListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetParameterListView.swift; sourceTree = "<group>"; };
+		BB7DCE132B0C547200D70D3E /* IconTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconTextView.swift; sourceTree = "<group>"; };
+		BB7DCE142B0C547200D70D3E /* PlanetListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetListCell.swift; sourceTree = "<group>"; };
+		BB7DCE152B0C547200D70D3E /* PlanetClimatesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetClimatesView.swift; sourceTree = "<group>"; };
+		BB7DCE1C2B0C567B00D70D3E /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		BB7DCE222B0C57F100D70D3E /* PlanetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7DCE242B0C57F100D70D3E /* PlanetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTests.swift; sourceTree = "<group>"; };
+		BB7DCE2B2B0C580200D70D3E /* FakeNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		BB7DCE2C2B0C580200D70D3E /* PlanetVMTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetVMTest.swift; sourceTree = "<group>"; };
+		BB7DCE2D2B0C580200D70D3E /* PlanetResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlanetResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BB7DCDE22B0C536800D70D3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7DCE1F2B0C57F100D70D3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				BB7DCDE72B0C536800D70D3E /* Planets */,
+				BB7DCE232B0C57F100D70D3E /* PlanetsTests */,
 				BB7DCDE62B0C536800D70D3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				BB7DCDE52B0C536800D70D3E /* Planets.app */,
+				BB7DCE222B0C57F100D70D3E /* PlanetsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +109,14 @@
 		BB7DCDE72B0C536800D70D3E /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				BB7DCDFC2B0C53C100D70D3E /* ViewModels */,
+				BB7DCDFB2B0C53BA00D70D3E /* Views */,
+				BB7DCDFA2B0C53B400D70D3E /* Utilities */,
+				BB7DCDF92B0C539A00D70D3E /* Modifiers */,
+				BB7DCDF82B0C539600D70D3E /* Models */,
+				BB7DCDF72B0C538D00D70D3E /* Extensions */,
+				BB7DCDF62B0C538500D70D3E /* Enums */,
 				BB7DCDE82B0C536800D70D3E /* PlanetsApp.swift */,
-				BB7DCDEA2B0C536800D70D3E /* ContentView.swift */,
 				BB7DCDEC2B0C536900D70D3E /* Assets.xcassets */,
 				BB7DCDEE2B0C536900D70D3E /* Preview Content */,
 			);
@@ -62,9 +126,93 @@
 		BB7DCDEE2B0C536900D70D3E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				BB7DCE1C2B0C567B00D70D3E /* PreviewData.swift */,
 				BB7DCDEF2B0C536900D70D3E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB7DCDF62B0C538500D70D3E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCE032B0C542600D70D3E /* NetworkError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		BB7DCDF72B0C538D00D70D3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCE062B0C543000D70D3E /* Color.swift */,
+				BB7DCE072B0C543000D70D3E /* Double.swift */,
+				BB7DCE052B0C543000D70D3E /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB7DCDF82B0C539600D70D3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCE002B0C541400D70D3E /* APIEndpoint.swift */,
+				BB7DCDFF2B0C541400D70D3E /* PlanetResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB7DCDF92B0C539A00D70D3E /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCE0B2B0C544F00D70D3E /* ClimateTextModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		BB7DCDFA2B0C53B400D70D3E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCE0D2B0C546500D70D3E /* NetworkManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BB7DCDFB2B0C53BA00D70D3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCE102B0C547200D70D3E /* PlanetListCell */,
+				BB7DCE0F2B0C547200D70D3E /* PlanetListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB7DCDFC2B0C53C100D70D3E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCDFD2B0C53DD00D70D3E /* PlanetViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BB7DCE102B0C547200D70D3E /* PlanetListCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCE112B0C547200D70D3E /* PopulationLabel.swift */,
+				BB7DCE122B0C547200D70D3E /* PlanetParameterListView.swift */,
+				BB7DCE132B0C547200D70D3E /* IconTextView.swift */,
+				BB7DCE142B0C547200D70D3E /* PlanetListCell.swift */,
+				BB7DCE152B0C547200D70D3E /* PlanetClimatesView.swift */,
+			);
+			path = PlanetListCell;
+			sourceTree = "<group>";
+		};
+		BB7DCE232B0C57F100D70D3E /* PlanetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCE2B2B0C580200D70D3E /* FakeNetworkManager.swift */,
+				BB7DCE2D2B0C580200D70D3E /* PlanetResponse.json */,
+				BB7DCE2C2B0C580200D70D3E /* PlanetVMTest.swift */,
+				BB7DCE242B0C57F100D70D3E /* PlanetsTests.swift */,
+			);
+			path = PlanetsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +235,24 @@
 			productReference = BB7DCDE52B0C536800D70D3E /* Planets.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB7DCE212B0C57F100D70D3E /* PlanetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7DCE282B0C57F200D70D3E /* Build configuration list for PBXNativeTarget "PlanetsTests" */;
+			buildPhases = (
+				BB7DCE1E2B0C57F100D70D3E /* Sources */,
+				BB7DCE1F2B0C57F100D70D3E /* Frameworks */,
+				BB7DCE202B0C57F100D70D3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB7DCE272B0C57F100D70D3E /* PBXTargetDependency */,
+			);
+			name = PlanetsTests;
+			productName = PlanetsTests;
+			productReference = BB7DCE222B0C57F100D70D3E /* PlanetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +265,10 @@
 				TargetAttributes = {
 					BB7DCDE42B0C536800D70D3E = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					BB7DCE212B0C57F100D70D3E = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = BB7DCDE42B0C536800D70D3E;
 					};
 				};
 			};
@@ -116,6 +286,7 @@
 			projectRoot = "";
 			targets = (
 				BB7DCDE42B0C536800D70D3E /* Planets */,
+				BB7DCE212B0C57F100D70D3E /* PlanetsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +301,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB7DCE202B0C57F100D70D3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7DCE302B0C580200D70D3E /* PlanetResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +316,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB7DCDEB2B0C536800D70D3E /* ContentView.swift in Sources */,
+				BB7DCE192B0C547200D70D3E /* IconTextView.swift in Sources */,
+				BB7DCDFE2B0C53DD00D70D3E /* PlanetViewModel.swift in Sources */,
+				BB7DCE162B0C547200D70D3E /* PlanetListView.swift in Sources */,
+				BB7DCE172B0C547200D70D3E /* PopulationLabel.swift in Sources */,
+				BB7DCE182B0C547200D70D3E /* PlanetParameterListView.swift in Sources */,
+				BB7DCE012B0C541400D70D3E /* PlanetResponse.swift in Sources */,
+				BB7DCE0C2B0C544F00D70D3E /* ClimateTextModifier.swift in Sources */,
+				BB7DCE0E2B0C546500D70D3E /* NetworkManager.swift in Sources */,
+				BB7DCE042B0C542600D70D3E /* NetworkError.swift in Sources */,
+				BB7DCE1B2B0C547200D70D3E /* PlanetClimatesView.swift in Sources */,
+				BB7DCE082B0C543000D70D3E /* String.swift in Sources */,
+				BB7DCE092B0C543000D70D3E /* Color.swift in Sources */,
 				BB7DCDE92B0C536800D70D3E /* PlanetsApp.swift in Sources */,
+				BB7DCE1D2B0C567B00D70D3E /* PreviewData.swift in Sources */,
+				BB7DCE0A2B0C543000D70D3E /* Double.swift in Sources */,
+				BB7DCE022B0C541400D70D3E /* APIEndpoint.swift in Sources */,
+				BB7DCE1A2B0C547200D70D3E /* PlanetListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7DCE1E2B0C57F100D70D3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7DCE252B0C57F100D70D3E /* PlanetsTests.swift in Sources */,
+				BB7DCE2E2B0C580200D70D3E /* FakeNetworkManager.swift in Sources */,
+				BB7DCE2F2B0C580200D70D3E /* PlanetVMTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB7DCE272B0C57F100D70D3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB7DCDE42B0C536800D70D3E /* Planets */;
+			targetProxy = BB7DCE262B0C57F100D70D3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BB7DCDF12B0C536900D70D3E /* Debug */ = {
@@ -322,6 +534,42 @@
 			};
 			name = Release;
 		};
+		BB7DCE292B0C57F200D70D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FVEGF5DQ7U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sugurutokuda.PlanetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Planets";
+			};
+			name = Debug;
+		};
+		BB7DCE2A2B0C57F200D70D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FVEGF5DQ7U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sugurutokuda.PlanetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Planets";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +587,15 @@
 			buildConfigurations = (
 				BB7DCDF42B0C536900D70D3E /* Debug */,
 				BB7DCDF52B0C536900D70D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7DCE282B0C57F200D70D3E /* Build configuration list for PBXNativeTarget "PlanetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7DCE292B0C57F200D70D3E /* Debug */,
+				BB7DCE2A2B0C57F200D70D3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
