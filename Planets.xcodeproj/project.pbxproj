@@ -30,6 +30,8 @@
 		BB7DCE2E2B0C580200D70D3E /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE2B2B0C580200D70D3E /* FakeNetworkManager.swift */; };
 		BB7DCE2F2B0C580200D70D3E /* PlanetVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE2C2B0C580200D70D3E /* PlanetVMTest.swift */; };
 		BB7DCE302B0C580200D70D3E /* PlanetResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BB7DCE2D2B0C580200D70D3E /* PlanetResponse.json */; };
+		BB7DCE332B0C5BD200D70D3E /* PlanetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE322B0C5BD200D70D3E /* PlanetDetailView.swift */; };
+		BB7DCE352B0C5D5500D70D3E /* LabelValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE342B0C5D5500D70D3E /* LabelValueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		BB7DCE2B2B0C580200D70D3E /* FakeNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
 		BB7DCE2C2B0C580200D70D3E /* PlanetVMTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetVMTest.swift; sourceTree = "<group>"; };
 		BB7DCE2D2B0C580200D70D3E /* PlanetResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlanetResponse.json; sourceTree = "<group>"; };
+		BB7DCE322B0C5BD200D70D3E /* PlanetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailView.swift; sourceTree = "<group>"; };
+		BB7DCE342B0C5D5500D70D3E /* LabelValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelValueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 		BB7DCDFB2B0C53BA00D70D3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BB7DCE312B0C5BB500D70D3E /* PlanetDetailView */,
 				BB7DCE102B0C547200D70D3E /* PlanetListCell */,
 				BB7DCE0F2B0C547200D70D3E /* PlanetListView.swift */,
 			);
@@ -213,6 +218,15 @@
 				BB7DCE242B0C57F100D70D3E /* PlanetsTests.swift */,
 			);
 			path = PlanetsTests;
+			sourceTree = "<group>";
+		};
+		BB7DCE312B0C5BB500D70D3E /* PlanetDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCE322B0C5BD200D70D3E /* PlanetDetailView.swift */,
+				BB7DCE342B0C5D5500D70D3E /* LabelValueView.swift */,
+			);
+			path = PlanetDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +339,8 @@
 				BB7DCE0C2B0C544F00D70D3E /* ClimateTextModifier.swift in Sources */,
 				BB7DCE0E2B0C546500D70D3E /* NetworkManager.swift in Sources */,
 				BB7DCE042B0C542600D70D3E /* NetworkError.swift in Sources */,
+				BB7DCE332B0C5BD200D70D3E /* PlanetDetailView.swift in Sources */,
+				BB7DCE352B0C5D5500D70D3E /* LabelValueView.swift in Sources */,
 				BB7DCE1B2B0C547200D70D3E /* PlanetClimatesView.swift in Sources */,
 				BB7DCE082B0C543000D70D3E /* String.swift in Sources */,
 				BB7DCE092B0C543000D70D3E /* Color.swift in Sources */,

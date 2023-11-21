@@ -13,7 +13,7 @@ struct PlanetListView: View {
     var body: some View {
         ZStack {
             Color.gray.ignoresSafeArea()
-            NavigationView {
+            NavigationStack {
                 ZStack {
                     if vm.filteredList.isEmpty && vm.isLoading {
                         Button(action: {
@@ -24,6 +24,14 @@ struct PlanetListView: View {
                         .zIndex(1001)
                     }
                     getPlanetList()
+                        .searchable(
+                            text: $vm.searchText,
+                            placement: .automatic,
+                            prompt: "Search Planets"
+                        )
+                        .onChange(of: vm.searchText) { _, newValue in
+                            vm.filterResultsFromUserLIst(searchText: newValue)
+                        }
                         .zIndex(1000)
                         .onAppear {
                             vm.loadPlanets(urlString: APIEndpoint.apiEndPoint)
@@ -39,14 +47,6 @@ struct PlanetListView: View {
                         })
                 }
             }
-            .searchable(
-                text: $vm.searchText,
-                placement: .automatic,
-                prompt: "Search Planets"
-            )
-            .onChange(of: vm.searchText) { _, newValue in
-                vm.filterResultsFromUserLIst(searchText: newValue)
-            }
         }
     }
 }
@@ -57,6 +57,14 @@ extension PlanetListView {
         List {
             ForEach(vm.filteredList.indices, id: \.self) { i in
                 PlanetListCell(planet: vm.filteredList[i])
+                    .background(
+                        NavigationLink("", destination: PlanetDetailView(planet: vm.filteredList[i]))
+//                        NavigationLink(destination: {
+//                            PlanetDetailView(planet: vm.filteredList[i])
+//                        }, label: {
+//                            EmptyView()
+//                        })
+                    )
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 1, trailing: 0))
                     .onAppear {
                         if i == vm.filteredList.count - 1 {

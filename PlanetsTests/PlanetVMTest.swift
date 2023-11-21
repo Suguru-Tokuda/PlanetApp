@@ -9,7 +9,7 @@ import XCTest
 @testable import Planets
 
 final class PlanetVMTest: XCTestCase {
-    var vm: PlanetViewModel!
+    private var vm: PlanetViewModel!
     
     override func setUpWithError() throws {
         vm = PlanetViewModel(manager: FakeNetworkManager())

@@ -19,7 +19,6 @@ struct PlanetListCell: View {
                             .font(.title3)
                             .fontWeight(.heavy)
                             .foregroundStyle(.white)
-                        
                         PlanetClimatesView(climates: planet.climates)
                     }
                     Spacer()
