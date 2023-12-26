@@ -15,19 +15,21 @@ class PlanetViewModel: ObservableObject {
     @Published var searchText: String = ""
     @Published var isLoading: Bool = false
     var nextUrl: String?
-    var cancellable = Set<AnyCancellable>()
+    var apiCancellables = Set<AnyCancellable>()
     var customError: NetworkError?
     var manager: Networking
+    var apiTask: AnyCancellable?
 
     init(manager: Networking = NetworkManager()) {
         self.manager = manager
     }
 
     deinit {
-        self.cancellable.removeAll()
+        self.apiCancellables.removeAll()
     }
 
     func loadPlanets(urlString: String) {
+        self.apiTask?.cancel()
         guard !isLoading else { return }
         guard !(!planets.isEmpty && nextUrl == nil) else { return }
         
@@ -42,7 +44,7 @@ class PlanetViewModel: ObservableObject {
             self.isLoading = true
         }
 
-        manager.getDataFromNetworkLayer(url: url, type: PlanetResponse.self)
+        apiTask = manager.getDataFromNetworkLayer(url: url, type: PlanetResponse.self)
             .receive(on: RunLoop.main)
             .sink { completion in
                 switch completion {
@@ -66,26 +68,28 @@ class PlanetViewModel: ObservableObject {
                 }
             } receiveValue: { val in
                 self.planets += val.results
-                self.filterResultsFromUserLIst(searchText: self.searchText)
+                self.filterResultsFromUserList(searchText: self.searchText)
                 self.isLoading = false
                 self.nextUrl = val.next
             }
-            .store(in: &cancellable)
+//            .store(in: &apiCancellables)
     }
     
     func refreshData() {
-        planets = []
-        isLoading = false
-        nextUrl = nil
-        loadPlanets(urlString: APIEndpoint.apiEndPoint)
+        DispatchQueue.main.async {
+            self.planets = []
+            self.isLoading = false
+            self.nextUrl = nil
+            self.loadPlanets(urlString: APIEndpoint.apiEndPoint)
+        }
     }
 
     func cancellOnGoingTask() {
-        cancellable.removeAll()
+        apiCancellables.removeAll()
         self.isLoading = false
     }
 
-    func filterResultsFromUserLIst(searchText: String) {
+    func filterResultsFromUserList(searchText: String) {
         if searchText.isEmpty {
             self.filteredList = planets
         } else {

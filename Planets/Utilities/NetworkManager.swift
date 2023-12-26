@@ -13,7 +13,7 @@ protocol Networking {
 }
 
 class NetworkManager: Networking {
-    func getDataFromNetworkLayer<T>(url: URL, type: T.Type) -> AnyPublisher<T, Error> where T : Decodable {
+    func getDataFromNetworkLayer<T: Decodable>(url: URL, type: T.Type) -> AnyPublisher<T, Error> where T: Decodable {
         return URLSession.shared.dataTaskPublisher(for: url)
             .map { $0.data }
             .decode(type: T.self, decoder: JSONDecoder())

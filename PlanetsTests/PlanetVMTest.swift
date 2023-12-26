@@ -36,7 +36,7 @@ final class PlanetVMTest: XCTestCase {
         vm.loadPlanets(urlString: "PlanetResponse")
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            self.vm.filterResultsFromUserLIst(searchText: "alderaan")
+            self.vm.filterResultsFromUserList(searchText: "alderaan")
             XCTAssertEqual(self.vm.filteredList.count, 1)
             
             let planet: Planet? = self.vm.filteredList.first

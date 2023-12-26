@@ -30,7 +30,7 @@ struct PlanetListView: View {
                             prompt: "Search Planets"
                         )
                         .onChange(of: vm.searchText) { _, newValue in
-                            vm.filterResultsFromUserLIst(searchText: newValue)
+                            vm.filterResultsFromUserList(searchText: newValue)
                         }
                         .zIndex(1000)
                         .onAppear {
@@ -59,11 +59,6 @@ extension PlanetListView {
                 PlanetListCell(planet: vm.filteredList[i])
                     .background(
                         NavigationLink("", destination: PlanetDetailView(planet: vm.filteredList[i]))
-//                        NavigationLink(destination: {
-//                            PlanetDetailView(planet: vm.filteredList[i])
-//                        }, label: {
-//                            EmptyView()
-//                        })
                     )
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 1, trailing: 0))
                     .onAppear {

@@ -15,7 +15,6 @@
 		BB7DCE022B0C541400D70D3E /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE002B0C541400D70D3E /* APIEndpoint.swift */; };
 		BB7DCE042B0C542600D70D3E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE032B0C542600D70D3E /* NetworkError.swift */; };
 		BB7DCE082B0C543000D70D3E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE052B0C543000D70D3E /* String.swift */; };
-		BB7DCE092B0C543000D70D3E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE062B0C543000D70D3E /* Color.swift */; };
 		BB7DCE0A2B0C543000D70D3E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE072B0C543000D70D3E /* Double.swift */; };
 		BB7DCE0C2B0C544F00D70D3E /* ClimateTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE0B2B0C544F00D70D3E /* ClimateTextModifier.swift */; };
 		BB7DCE0E2B0C546500D70D3E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCE0D2B0C546500D70D3E /* NetworkManager.swift */; };
@@ -54,7 +53,6 @@
 		BB7DCE002B0C541400D70D3E /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		BB7DCE032B0C542600D70D3E /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		BB7DCE052B0C543000D70D3E /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		BB7DCE062B0C543000D70D3E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BB7DCE072B0C543000D70D3E /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		BB7DCE0B2B0C544F00D70D3E /* ClimateTextModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClimateTextModifier.swift; sourceTree = "<group>"; };
 		BB7DCE0D2B0C546500D70D3E /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 		BB7DCDF72B0C538D00D70D3E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BB7DCE062B0C543000D70D3E /* Color.swift */,
 				BB7DCE072B0C543000D70D3E /* Double.swift */,
 				BB7DCE052B0C543000D70D3E /* String.swift */,
 			);
@@ -343,7 +340,6 @@
 				BB7DCE352B0C5D5500D70D3E /* LabelValueView.swift in Sources */,
 				BB7DCE1B2B0C547200D70D3E /* PlanetClimatesView.swift in Sources */,
 				BB7DCE082B0C543000D70D3E /* String.swift in Sources */,
-				BB7DCE092B0C543000D70D3E /* Color.swift in Sources */,
 				BB7DCDE92B0C536800D70D3E /* PlanetsApp.swift in Sources */,
 				BB7DCE1D2B0C567B00D70D3E /* PreviewData.swift in Sources */,
 				BB7DCE0A2B0C543000D70D3E /* Double.swift in Sources */,
